@@ -16,5 +16,9 @@ RUN grunt
 RUN go get
 RUN go build
 
+RUN mkdir -p /data
+VOLUME /data
+ENV UPLOAD_DIR /data
+
 CMD ["/go/src/github.com/byttl/byt/byt"]
 
