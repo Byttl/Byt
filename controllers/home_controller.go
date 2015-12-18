@@ -14,6 +14,7 @@ func NewHomeController(s *web.Server) *HomeController {
 	ctl := &HomeController{}
 
 	s.GET("/", ctl.getHome)
+	s.StaticFile("/favicon.ico", "./static/favicon.ico")
 
 	return ctl
 }
