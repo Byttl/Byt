@@ -1,0 +1,10 @@
+tmp
+*.swp
+node_modules
+.env
+config.js
+*.min.css
+*.min.css.map
+*.min.js
+.sass-cache
+upload/*

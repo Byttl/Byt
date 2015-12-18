@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Byt.tl - A free easy file hosting - Feel free to share something</title>
+        <link href="http://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet" type="text/css" />
+        <link href="static/css/all.min.css" rel="stylesheet" type="text/css" />
+         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="static/js/all.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Byt.tl</h1>
+            <h2>A free easy file hosting<br />Feel free to share something</h2>
+        </header>
+        <div id="loader">
+            <svg width="300" height="300" viewBox="0 0 100 100">
+                <g transform='translate(50, 50)'>
+                    <g class="loader-button">
+                        <circle cx="0" cy="0" r="40" />
+                        <!-- TODO: Create icon .svg -->
+                        <image x="-25" y="-25" width="50" height="50" xlink:href="static/upload.png" />
+                    </g>
+                    <path class="loader-bar-first" stroke-width="5" fill="none" d="M 0 -40 a 40 40 0 1 1 0 80 a 40 40 0 1 1 0 -80" />
+                    <path class="loader-bar-second" stroke-width="5" fill="none" d="M 0 -45 a 45 45 0 1 1 0 90 a 45 45 0 1 1 0 -90" />
+                    <text class="loader-title" y="-10">Uploading...</text>
+                    <text class="loader-pourcent" y="10">0%</text>
+                </g>
+            </svg>
+            <input class="loader-input" type="file" />
+        </div>
+        <section id="box" class="box">
+            <div class="box-content">
+                <h3 class="box-title"></h3>
+                <div class="box-inner"></div>
+                <a class="box-close" href="#">X</a>
+            </div>
+        </section>
+        <footer>
+            <a href="https://github.com/byttl">Fork me on github</a>
+        </footer>
+    </body>
+</html>
