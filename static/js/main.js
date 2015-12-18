@@ -139,7 +139,7 @@ ButtonLoader.prototype.upload = function(file) {
             }
         }
     };
-    req.open('POST', UPLOAD_URL, true);
+    req.open('POST', '/upload', true);
 
     var formData = new FormData();
     formData.append('file', file);
