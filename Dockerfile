@@ -20,5 +20,7 @@ RUN mkdir -p /data
 VOLUME /data
 ENV UPLOAD_DIR /data
 
+EXPOSE 8080
+
 CMD ["/go/src/github.com/byttl/byt/byt"]
 
