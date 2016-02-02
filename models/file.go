@@ -7,6 +7,7 @@ import (
 	"io"
 	"mime/multipart"
 	"net/http"
+	"net/url"
 	"os"
 )
 
@@ -51,7 +52,7 @@ func (f *File) URL(r *http.Request) string {
 		scheme = "https"
 	}
 
-	return fmt.Sprintf("%s://%s/f/%s/%s", scheme, r.Host, f.Id, f.Filename)
+	return fmt.Sprintf("%s://%s/f/%s/%s", scheme, r.Host, f.Id, url.QueryEscape(f.Filename))
 }
 
 func FilePath(id string) string {
