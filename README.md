@@ -1,7 +1,7 @@
 # Byt
 Byt is file sharing service made easy
 
-Public platform: http://byt.tl
+Public platform: https://wayt.ovh
 
 ## Run your own with Docker
 
