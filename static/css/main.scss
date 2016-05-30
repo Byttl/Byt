@@ -123,6 +123,44 @@ a:hover {
     text-align: center;
 }
 
+.form {
+    label {
+        display: block;
+    }
+    input, textarea, button {
+        padding: 10px;
+        width: 580px;
+        border-radius: 5px;
+        border: 1px solid #b7b7b7;
+    }
+    textarea {
+        height: 400px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    button {
+        cursor: pointer;
+        text-transform: uppercase;
+        width: 600px;
+        border: 0px;
+        color: #fff;
+        background-color: rgb(231, 76, 60);
+        transition: 0.3s;
+
+        &:hover {
+            background-color: rgb(192, 57, 43);
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .form {
+        input, textarea, button {
+            width: 85%;
+        }
+    }
+}
+
 /* State */
 .loader-pourcent, .loader-title, .loader-bar-first, .loader-bar-second, .loader-input, .box {
     display: none;
